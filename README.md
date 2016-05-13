@@ -5,6 +5,8 @@
 > Docker containers for [iBLIS](https://github.com/ilabafrica/iBLIS)
 
 [![Build Status](https://travis-ci.org/esaude/iblis-contrib-docker.svg?branch=master)](https://travis-ci.org/esaude/iblis-contrib-docker)
+[![MariaDB Image](https://omrs-shields.psbrandt.io/custom/mariadb/149_MB_%20%7C%207_Layers/blue?style=flat)](https://bintray.com/esaude/iblis-docker/mariadb/view)
+[![Nginx Image](https://omrs-shields.psbrandt.io/custom/nginx/164_MB_%20%7C%208_Layers/blue?style=flat)](https://bintray.com/esaude/iblis-docker/nginx/view)
 
 This repository contains the necessary infrastructure code and related resources
 required to compose and run Docker containers that start an instance
