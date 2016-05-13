@@ -1,0 +1,12 @@
+iblis-mariadb:
+  image: esaude-docker-iblis-docker.bintray.io/mariadb:2.6
+  ports:
+    - "3306:3306"
+  container_name: iblis-mariadb
+iblis-nginx:
+  image: esaude-docker-iblis-docker.bintray.io/nginx:2.6
+  ports:
+    - "80:80"
+  container_name: iblis-nginx
+  links:
+    - iblis-mariadb

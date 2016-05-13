@@ -1,0 +1,12 @@
+iblis-mariadb:
+  build: mariadb
+  ports:
+    - "3306:3306"
+  container_name: iblis-mariadb
+iblis-nginx:
+  build: nginx
+  ports:
+    - "80:80"
+  container_name: iblis-nginx
+  links:
+    - iblis-mariadb
