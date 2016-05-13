@@ -4,6 +4,8 @@
 
 > Docker containers for [iBLIS](https://github.com/ilabafrica/iBLIS)
 
+[![Build Status](https://travis-ci.org/esaude/iblis-contrib-docker.svg?branch=master)](https://travis-ci.org/esaude/iblis-contrib-docker)
+
 This repository contains the necessary infrastructure code and related resources
 required to compose and run Docker containers that start an instance
 of the [iLab Africa](http://www.ilabafrica.ac.ke/) [iBLIS application](https://github.com/ilabafrica/iBLIS).
