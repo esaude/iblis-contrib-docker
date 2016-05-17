@@ -10,10 +10,6 @@ else
 	mysql_install_db --user=root --datadir="/var/lib/mysql" --rpm
 	echo 'Database initialized'
 
-  if [ ! -d "/run/mysqld" ]; then
-    mkdir -p /run/mysqld
-  fi
-
 	tfile=$(mktemp)
   if [ ! -f "$tfile" ]; then
       return 1
@@ -31,6 +27,10 @@ else
 
   /usr/bin/mysqld --user=root --bootstrap --verbose=0 < "$tfile"
   rm -f "$tfile"
+fi
+
+if [ ! -d "/run/mysqld" ]; then
+	mkdir -p /run/mysqld
 fi
 
 echo 'Starting server'

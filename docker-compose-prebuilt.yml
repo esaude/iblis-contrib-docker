@@ -1,7 +1,16 @@
+iblis-data:
+  image: alpine:3.3
+  volumes:
+    - iblis-data:/var/lib/mysql
+  command:
+    - /bin/true
+  container_name: iblis-data
 iblis-mariadb:
   image: esaude-docker-iblis-docker.bintray.io/mariadb:2.6
   ports:
     - "3306:3306"
+  volumes_from:
+    - iblis-data
   container_name: iblis-mariadb
 iblis-nginx:
   image: esaude-docker-iblis-docker.bintray.io/nginx:2.6
